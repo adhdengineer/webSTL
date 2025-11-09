@@ -24,7 +24,6 @@ def scan_directory(root, path):
     
 def __dir_has_stl_file(dir_node):
     for node in dir_node['children']:
-        print(node)
         if 'children' in node: # is a dir, so scan it
             if (__dir_has_stl_file(node)):
                 return True
